@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="well center-block">
+    <button class="btn btn-danger" (click)="decrement()">Decrement 5</button>
+    <button class="btn btn-success" (click)="increment()">Increment 3</button>
+    <button class="btn btn-warning" (click)="reset()">Reset Counter</button>
+    <app-total-clicks [counter]="counter$ | async"></app-total-clicks>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <app-count-viewer [counter]="counter$ | async" [stlyeNumber]="'01'"></app-count-viewer>
+  <app-count-viewer [counter]="counter$ | async" [stlyeNumber]="'02'"></app-count-viewer>
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <app-count-viewer [counter]="counter$ | async" [stlyeNumber]="'01'"></app-count-viewer>
+        </div>
+        <div class="col-sm-6">
+          <app-count-viewer [counter]="counter$ | async" [stlyeNumber]="'04'"></app-count-viewer>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <app-count-viewer [counter]="counter$ | async" [stlyeNumber]="'03'"></app-count-viewer>
+        </div>
+        <div class="col-sm-6">
+          <app-count-viewer [counter]="counter$ | async" [stlyeNumber]="'05'"></app-count-viewer>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+.data-element {
+  font-size: 1.5em;
+  font-weight: bold
+}
+
+.well-01 {
+  background-color: azure;
+}
+
+.well-02 {
+  background-color: antiquewhite;
+}
+
+.well-03 {
+  background-color: darkorange;
+}
+
+.well-04 {
+  background-color: mediumseagreen;
+}
+
+.well-05 {
+  background-color: skyblue;
+}
